@@ -243,7 +243,7 @@ export class SlimScrollDirective implements OnInit {
     wrapper.parentNode.replaceChild(docFrag, wrapper);
   }
     @HostListener('window:resize', ['$event'])
-    onResize() {
+    onResize($event: any) {
         this.getBarHeight()
     }
 }
